@@ -106,6 +106,26 @@ video{
     <button onclick="App.sell(2)" style="padding-left: 20px;padding-right: 20px;">出售</button>
     </div>
 </div>
+<div>
+  <h2>指定交易对</h2>
+  <h3><label id = "atokenprice"></label></h3>
+  <label>流动性合约:</label>
+  <input id="atokenpair"  type="text" style="width:350px;">  
+  <br />
+  <label>token0:</label>
+  <input id="atoken0"  type="text" style="width:200px;"> 
+  <label>token0合约:</label>
+  <input id="atoken00"  type="text" style="width:250px;"> 
+  <br /> 
+  <label>token1:</label>
+  <input id="atoken1"  type="text" style="width:200px;">
+  <label>token1合约:</label>
+  <input id="atoken11"  type="text" style="width:250px;"> 
+  <div class = "execute">
+  <button onclick="App.convert(3)" style="padding-left: 20px;padding-right: 20px;">兑换</button>
+  <button onclick="App.sell(3)" style="padding-left: 20px;padding-right: 20px;">出售</button>
+  </div>
+</div>
 
 
 <p id="status"></p>
