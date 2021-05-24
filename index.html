@@ -44,7 +44,7 @@ video{
         <option value = "0xED7d5F38C79115ca12fe6C0041abb22F0A06C300">MdexSwap</option>
       </select>
     <label>合约土狗地址: </label>
-    <input id="DogAddress" type="text" style="width:350px;" value="" oninput="App.getDogAddress()">
+    <input id="DogAddress" type="text" style="width:350px;" value="0xb1528a7BE5A96B77de5337988Ba69029cA6E2c7A" oninput="App.getDogAddress()">
     <br />
     <label>多少USDT兑换: </label>
     <input id="USDT" type="text" style="width:40px;" value="10">
@@ -75,12 +75,12 @@ video{
     <label>token0:</label>
     <input id="token0"  type="text" style="width:200px;"> 
     <label>token0合约:</label>
-    <input id="token00"  type="text" style="width:250px;"> 
+    <input id="token00"  type="text" style="width:325px;"> 
     <br /> 
     <label>token1:</label>
     <input id="token1"  type="text" style="width:200px;">
     <label>token1合约:</label>
-    <input id="token11"  type="text" style="width:250px;"> 
+    <input id="token11"  type="text" style="width:325px;"> 
     <br/>
     <div class = "execute">
     <button onclick="App.convert(1)" style="padding-left: 20px;padding-right: 20px;">兑换</button>
@@ -96,19 +96,21 @@ video{
     <label>token0:</label>
     <input id="utoken0"  type="text" style="width:200px;"> 
     <label>token0合约:</label>
-    <input id="utoken00"  type="text" style="width:250px;"> 
+    <input id="utoken00"  type="text" style="width:325px;"> 
     <br /> 
     <label>token1:</label>
     <input id="utoken1"  type="text" style="width:200px;">
     <label>token1合约:</label>
-    <input id="utoken11"  type="text" style="width:250px;"> 
+    <input id="utoken11"  type="text" style="width:325px;"> 
     <div class = "execute">
     <button onclick="App.convert(2)" style="padding-left: 20px;padding-right: 20px;">兑换</button>
     <button onclick="App.sell(2)" style="padding-left: 20px;padding-right: 20px;">出售</button>
     </div>
 </div>
 <div>
-  <h2>指定交易对</h2>
+   <h2>指定交易对</h2>
+  <label>指定合约: </label>
+  <input id="assign" type="text" style="width:325px;" value="">
   <h3><label id = "atokenprice"></label></h3>
   <label>流动性合约:</label>
   <input id="atokenpair"  type="text" style="width:350px;">  
@@ -116,12 +118,12 @@ video{
   <label>token0:</label>
   <input id="atoken0"  type="text" style="width:200px;"> 
   <label>token0合约:</label>
-  <input id="atoken00"  type="text" style="width:250px;"> 
+  <input id="atoken00"  type="text" style="width:325px;"> 
   <br /> 
   <label>token1:</label>
   <input id="atoken1"  type="text" style="width:200px;">
   <label>token1合约:</label>
-  <input id="atoken11"  type="text" style="width:250px;"> 
+  <input id="atoken11"  type="text" style="width:325px;"> 
   <div class = "execute">
   <button onclick="App.convert(3)" style="padding-left: 20px;padding-right: 20px;">兑换</button>
   <button onclick="App.sell(3)" style="padding-left: 20px;padding-right: 20px;">出售</button>
